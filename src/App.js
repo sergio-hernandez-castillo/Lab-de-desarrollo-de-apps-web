@@ -1,7 +1,7 @@
 import "./styles.css";
 import { useEffect } from "react";
 import SignIn from "./paginas/Login";
-import Index  from "./paginas/Index";
+import Index from "./paginas/Index";
 import utilsFunctions from "./funciones/FirebaseFunctions";
 export default function App(props) {
   //console.log("props-> App");
@@ -36,9 +36,9 @@ export default function App(props) {
       });
   };
 
-
   return currentUser === "cargando" ? (
-    <p> cargando</p>
+    // <p> cargando</p>
+    <Loading />
   ) : (
     <div className="App">
       <h1>{currentUser} </h1>
