@@ -56,7 +56,7 @@ export default function SignUp(props) {
       console.log("error", error);
       alert(error.message);
     }
-    props.history.push("/dashboard");
+    props.history.push("/");
   };
 
   return (
@@ -68,7 +68,7 @@ export default function SignUp(props) {
             marginTop: 8,
             display: "flex",
             flexDirection: "column",
-            alignItems: "center"
+            alignItems: "center",
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
